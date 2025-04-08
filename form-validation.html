@@ -13,9 +13,9 @@
      <form action="">
 
 
-        <input type="text" id="input" placeholder="Enter your fristName"><br><br>
-        <input type="text" id="input" placeholder="Enter your LastName"><br><br>
-        <input type="number" id="input" placeholder="Enter your Age">
+        <input type="text" id="input1" placeholder="Enter your fristName"><br><br>
+        <input type="text" id="input2" placeholder="Enter your LastName"><br><br>
+        <input type="number" id="input3" placeholder="Enter your Age">
 
         <button type="submit" onclick="Tosubmit()"> submit now</button>
      </form>
@@ -24,9 +24,14 @@
      <script>
 
         const Tosubmit=()=>{
-            let inputsdatas1=document.getElementById("input").value;
-           
-            inputsdatas1 !==("") ? alert("Form is already submit") : alert("Please fill the form before submit")
+            let inputsdatas1=document.getElementById("input1").value;
+            let inputsdatas2=document.getElementById("input2").value;
+            let inputsdatas3=document.getElementById("input3").value;
+            if(inputsdatas1 && inputsdatas2 && inputsdatas3 !==("") ){
+                alert("form submited now ")
+            }else{
+                alert("Please fill form well before submit")
+            }
         }
      </script>
 </body>
